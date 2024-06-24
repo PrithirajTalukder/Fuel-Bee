@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769341246089",
+    "project_id": "fuel-bee",
+    "storage_bucket": "fuel-bee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769341246089:android:7f9a502be9d75d40691458",
+        "android_client_info": {
+          "package_name": "com.example.fuelbee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjR9tuCFdMbkfwEJ_UHtVChZzPXjU_Bhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
