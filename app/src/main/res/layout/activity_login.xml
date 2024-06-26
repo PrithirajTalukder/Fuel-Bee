@@ -42,6 +42,13 @@
             android:hint="@string/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
         
         <Button
             android:layout_gravity="center"
@@ -49,6 +56,13 @@
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noAccount"
+            android:text="@string/don_t_have_an_account_signup"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
