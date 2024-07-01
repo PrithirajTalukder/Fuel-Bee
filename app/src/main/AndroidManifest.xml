@@ -18,16 +18,14 @@
         android:theme="@style/Theme.FuelBee"
         tools:targetApi="31">
         <activity
+            android:name=".home_screen"
+            android:exported="false" />
+        <activity
             android:name=".my_location"
             android:exported="false" />
-        <activity
-            android:name=".home"
-            android:exported="false" />
+
         <activity
             android:name=".fuelLocation"
-            android:exported="false" />
-        <activity
-            android:name=".activity_fuellocation"
             android:exported="false" />
         <activity
             android:name=".Registration"
@@ -43,7 +41,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

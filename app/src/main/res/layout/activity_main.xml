@@ -8,26 +8,8 @@
     android:background="@drawable/bees"
     tools:context=".MainActivity">
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom"
-        android:background="@color/yellow"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="50dp">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:itemHorizontalTranslationEnabled="false"
-            app:itemIconSize="24dp"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/menu"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white" />
-    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

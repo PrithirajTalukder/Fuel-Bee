@@ -49,8 +49,8 @@ public class fuelLocation extends AppCompatActivity implements OnMapReadyCallbac
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent to navigate to Login Activity
-                Intent intent = new Intent(fuelLocation.this, Login.class);
+
+                Intent intent = new Intent(fuelLocation.this, home_screen.class);
                 startActivity(intent);
             }
         });
