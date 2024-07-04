@@ -50,7 +50,7 @@ public class fuelLocation extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(fuelLocation.this, home_screen.class);
+                Intent intent = new Intent(fuelLocation.this, MainActivity.class);
                 startActivity(intent);
             }
         });

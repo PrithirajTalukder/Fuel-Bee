@@ -4,15 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".homeFragment">
+    tools:context=".homeFragment"
+    >
+
+  <TextView
+      android:id="@+id/text_view_greeting"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hi, Prithiraj"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:layout_gravity="top"
+      android:layout_marginTop="16dp"
+
+      />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:gravity="center"/>
+
+
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recyclerHome"
+      android:padding="16dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginBottom="60dp"
+      />
 
 </FrameLayout>

@@ -18,12 +18,14 @@
         android:theme="@style/Theme.FuelBee"
         tools:targetApi="31">
         <activity
+            android:name=".ProductDetail"
+            android:exported="false" />
+        <activity
             android:name=".home_screen"
             android:exported="false" />
         <activity
             android:name=".my_location"
             android:exported="false" />
-
         <activity
             android:name=".fuelLocation"
             android:exported="false" />

@@ -46,7 +46,7 @@ public class my_location extends AppCompatActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 // Intent to navigate to AnotherActivity
-                Intent intent = new Intent(my_location.this, home_screen.class);
+                Intent intent = new Intent(my_location.this, fuelLocation.class);
                 startActivity(intent);
             }
         });
