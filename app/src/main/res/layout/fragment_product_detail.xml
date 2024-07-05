@@ -1,38 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+   >
 
-    <ImageView
-        android:id="@+id/product_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"/>
-
-    <Button
-        android:id="@+id/add_to_cart_button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Add to Cart" />
+        android:orientation="vertical"
+        android:background="@color/black"
+        >
 
-    <TextView
-        android:id="@+id/product_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="16dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/black">
 
-    <TextView
-        android:id="@+id/product_distance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/baseline_keyboard_backspace_24" />
 
-</LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical"
+            android:text="Fuel Categories"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <!-- First RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/white_box">
+
+                <TextView
+                    android:id="@+id/petrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/petrol"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:padding="20dp"/>
+
+                <TextView
+                    android:id="@+id/petrol_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="130tk/Litre"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="20dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/petrol_image"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/petrol"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/add_to_cart_button_petrol"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="Add to Cart"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <!-- Second RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/white_box">
+
+                <TextView
+                    android:id="@+id/octane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/octane"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:padding="20dp"/>
+
+                <TextView
+                    android:id="@+id/octane_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="130tk/Litre"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="20dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/octane_image"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/petrol"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/add_to_cart_button_octane"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="Add to Cart"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <!-- Third RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/white_box">
+
+                <TextView
+                    android:id="@+id/diesel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diesel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:padding="20dp"/>
+
+                <TextView
+                    android:id="@+id/diesel_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="130tk/Litre"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="20dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/diesel_image"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/petrol"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/add_to_cart_button_diesel"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="Add to Cart"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+
+
+
+            <Button
+                android:id="@+id/proceed_to_payment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_button"
+                android:text="Proceed to Payment"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/proceed_to_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                android:textColor="@color/black"
+                 />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

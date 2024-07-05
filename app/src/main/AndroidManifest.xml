@@ -23,17 +23,12 @@
         <activity
             android:name=".home_screen"
             android:exported="false" />
-        <activity
-            android:name=".my_location"
-            android:exported="false" />
-        <activity
-            android:name=".fuelLocation"
-            android:exported="false" />
+
         <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".fuelLocation"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
