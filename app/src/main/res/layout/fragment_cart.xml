@@ -1,18 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".cartFragment">
+    android:background="@color/black">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="My Cart"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <!-- Cart Item 1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/white_box"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/item_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petrol"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/petrol_pump_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_1"
+                android:text="Petrol Pump 1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/item_quantity_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petrol_pump_1_1"
+                android:text="Quantity: 2 Litres"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/item_price_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_quantity_1"
+                android:text="Price: 130tk/Litre"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+        <!-- Cart Item 2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/white_box"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/item_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octane"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/petrol_pump_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_2"
+                android:text="Petrol Pump 1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/item_quantity_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petrol_pump_1_2"
+                android:text="Quantity: 1 Litre"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/item_price_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_quantity_2"
+                android:text="Price: 130tk/Litre"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+        <!-- Cart Item 3 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/white_box"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/item_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diesel"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/petrol_pump_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_3"
+                android:text="Petrol Pump 1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/item_quantity_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petrol_pump_1_3"
+                android:text="Quantity: 3 Litres"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/item_price_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_quantity_3"
+                android:text="Price: 130tk/Litre"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Delivery Charge -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/delivery_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charge: 50tk"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <!-- Total Price -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:padding="16dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price: 780tk"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/proceed_to_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/proceed_to_payment"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</ScrollView>

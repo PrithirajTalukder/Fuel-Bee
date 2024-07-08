@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-   >
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/black"
-        >
+        android:background="@color/black">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,7 +21,6 @@
                 android:layout_centerVertical="true"
                 android:padding="10dp"
                 android:src="@drawable/baseline_keyboard_backspace_24" />
-
         </RelativeLayout>
 
         <TextView
@@ -37,7 +33,7 @@
             android:textColor="@color/white"
             android:padding="10dp"/>
 
-        <!-- First RelativeLayout -->
+        <!-- First RelativeLayout for Petrol -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,17 +77,54 @@
 
             <Button
                 android:id="@+id/add_to_cart_button_petrol"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="110dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="35dp"
                 android:background="@drawable/rounded_button"
                 android:text="Add to Cart"
                 android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/petrol_quantity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/decrement_button_petrol"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="-"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/quantity_text_petrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/increment_button_petrol"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="+"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
         </RelativeLayout>
 
-        <!-- Second RelativeLayout -->
+        <!-- Second RelativeLayout for Octane -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,17 +168,54 @@
 
             <Button
                 android:id="@+id/add_to_cart_button_octane"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="110dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="35dp"
                 android:background="@drawable/rounded_button"
                 android:text="Add to Cart"
                 android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/octane_quantity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/decrement_button_octane"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="-"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/quantity_text_octane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/increment_button_octane"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="+"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
         </RelativeLayout>
 
-        <!-- Third RelativeLayout -->
+        <!-- Third RelativeLayout for Diesel -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -189,54 +259,81 @@
 
             <Button
                 android:id="@+id/add_to_cart_button_diesel"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="110dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="35dp"
                 android:background="@drawable/rounded_button"
                 android:text="Add to Cart"
                 android:textColor="@color/black"/>
 
+            <LinearLayout
+                android:id="@+id/diesel_quantity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
+                <Button
+                    android:id="@+id/decrement_button_diesel"
+                    android:layout_width="40dp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="-"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/quantity_text_diesel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/increment_button_diesel"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/rounded_button"
+                    android:text="+"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
         </RelativeLayout>
 
-
-
-
-            <Button
-                android:id="@+id/proceed_to_payment_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_margin="20dp"
-                android:background="@drawable/rounded_button"
-                android:text="Proceed to Payment"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+        <Button
+            android:id="@+id/proceed_to_cart_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/proceed_to_cart"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
 
 
 
 
 
 
-
-
-            <Button
-                android:id="@+id/proceed_to_payment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="@color/black"
-                android:textColor="@color/black"
-                 />
-
-
+        <Button
+            android:id="@+id/proceed_to_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="Proceed to Payment"
+            android:textColor="@color/black"
+           />
 
 
 
 
     </LinearLayout>
-
-
 </ScrollView>

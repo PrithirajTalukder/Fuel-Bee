@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFF00"
+    tools:context=".SplashScreen">
+
+<ImageView
+android:id="@+id/imageViewBackground"
+android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="24dp"
+    android:src="@drawable/logo"
+    android:scaleType="centerInside"
+    android:layout_marginBottom="110dp"
+    />
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:background="@drawable/get_started"
+        android:text="Lets get started"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:drawableEnd="@drawable/baseline_arrow_right_alt_24"
+        />
+
+
+    </LinearLayout>

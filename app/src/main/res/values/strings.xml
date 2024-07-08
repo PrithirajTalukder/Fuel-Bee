@@ -19,6 +19,9 @@
 
     <string name="petrol">Petrol</string>
     <string name="octane">Octane</string>
+    <string name="proceed_to_cart">Proceed to Cart</string>
+    <string name="pay_with_stripe">Pay with Stripe</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
 
 
 </resources>

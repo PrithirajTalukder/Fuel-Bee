@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".PaymentScreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="30dp"
+            android:background="@color/black"
+            tools:ignore="ExtraText">
+
+            <!-- Customer details -->
+            <TextView
+                android:text="Customer Details"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Name -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/payment_name"
+                android:background="@drawable/yellow_border"
+                android:layout_marginTop="20dp"
+                android:hint="@string/name"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:paddingLeft="20dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"/>
+
+            <!-- Email -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/payment_email"
+                android:background="@drawable/yellow_border"
+                android:layout_marginTop="20dp"
+                android:hint="@string/email"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:paddingLeft="20dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"/>
+
+            <!-- Address -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/payment_address"
+                android:background="@drawable/yellow_border"
+                android:layout_marginTop="20dp"
+                android:hint="Address"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:paddingLeft="20dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"/>
+
+            <!-- Mobile -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/payment_mobile"
+                android:background="@drawable/yellow_border"
+                android:layout_marginTop="20dp"
+                android:hint="Mobile"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/baseline_call_24"
+                android:paddingLeft="20dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:inputType="phone"/>
+
+
+
+    <!-- Pay with Stripe button -->
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/pay_with_stripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Pay with Stripe"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:enabled="false"/>
+
+</LinearLayout>
+
